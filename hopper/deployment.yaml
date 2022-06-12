@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hopper
-        image: phyominhtun/hopper-argocd:2.0
+        image: 359073224575.dkr.ecr.ap-southeast-1.amazonaws.com/hopper-is-back:latest
         ports:
         - containerPort: 80
 
