@@ -15,6 +15,7 @@ spec:
       containers:
       - name: hopper
         image: 359073224575.dkr.ecr.ap-southeast-1.amazonaws.com/hopper-is-back:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
       imagePullSecrets:
