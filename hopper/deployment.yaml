@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hopper
+spec:
+  selector:
+    matchLabels:
+      app: hopper
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hopper
+    spec:
+      containers:
+      - name: hopper
+        image: phyominhtun/hopper-argocd:1.0
+        ports:
+        - containerPort: 80
+

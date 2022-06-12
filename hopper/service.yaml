@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hopper-service
+spec:
+  selector:
+    app: hopper
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+
