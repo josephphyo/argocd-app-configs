@@ -14,10 +14,7 @@ spec:
     spec:
       containers:
       - name: hopper
-        image: 359073224575.dkr.ecr.ap-southeast-1.amazonaws.com/hopper-is-back:latest
+        image: phyominhtun/hopper-argocd:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-      imagePullSecrets:
-        - name: regcred
-
