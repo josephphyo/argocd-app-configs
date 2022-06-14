@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hopper-argo-app-pipeline
+  name: hopperv1-argo-app-pipeline
   namespace: argocd
 spec:
-  project: default
+  project: hopper
   source:
     repoURL: https://github.com/josephphyo/argocd-app-configs.git
     targetRevision: HEAD

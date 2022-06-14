@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hopper
+  name: hopperv2
 spec:
   selector:
     matchLabels:
-      app: hopper
+      app: hopperv2
   replicas: 1
   template:
     metadata:
       labels:
-        app: hopper
+        app: hopperv2
     spec:
       containers:
-      - name: hopper
-        image: phyominhtun/hopper-argocd:1.0
+      - name: hopperv2
+        image: phyominhtun/hopper-argocd:2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
