@@ -13,8 +13,8 @@ spec:
         app: hopperv1
     spec:
       containers:
-      - name: hopperv1
-        image: phyominhtun/hopper-argocd:1.0
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        - name: hopperv1
+          image: phyominhtun/hopper-argocd:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
