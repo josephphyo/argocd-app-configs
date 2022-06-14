@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/josephphyo/argocd-app-configs.git
     targetRevision: HEAD
-    path: hopper-v2
+    path: hopper
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app-space
