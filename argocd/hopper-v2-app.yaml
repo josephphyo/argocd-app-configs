@@ -4,7 +4,7 @@ metadata:
   name: hopperv2-argo-app-pipeline
   namespace: argocd
 spec:
-  project: hopper
+  project: default
   source:
     repoURL: https://github.com/josephphyo/argocd-app-configs.git
     targetRevision: HEAD
