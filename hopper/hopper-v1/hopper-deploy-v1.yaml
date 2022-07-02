@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hopperv1
-          image: phyominhtun/hopper-argocd:1fc5967a357dd01cb0df8bf25ecade8c795d5ede
+          image: phyominhtun/hopper-argocd:365eb5d9d0bb0657ebdb818e31aa33e6b6682215
           imagePullPolicy: Always
           ports:
             - containerPort: 80
