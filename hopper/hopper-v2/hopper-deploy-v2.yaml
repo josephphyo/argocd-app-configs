@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hopperv2
+  namespace: arm-app
 spec:
   selector:
     matchLabels:
@@ -14,7 +15,17 @@ spec:
     spec:
       containers:
       - name: hopperv2
-        image: phyominhtun/hopper-argocd:2.0
+        image: phyominhtun/hopper-circleci-argocd:cptmarvel-84
         imagePullPolicy: Always
         ports:
         - containerPort: 80
+      nodeSelector:
+        pool: arm
+      imagePullSecrets:
+      - name: dockerhub-secret
+      tolerations:
+      - key: "kubernetes.io/arch"
+        operator: "Equal"
+        value: "arm64"
+        effect: "NoSchedule" # For Deploy GKE T2A ARM instance
+

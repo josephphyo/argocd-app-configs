@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hopperv1
+  namespace: amd-app
 spec:
   selector:
     matchLabels:
@@ -14,9 +15,11 @@ spec:
     spec:
       containers:
       - name: hopperv1
-        image: phyominhtun/hopper-circleci-argocd:cptmarvel-85
+        image: phyominhtun/hopper-circleci-argocd:cptmarvel-55
         imagePullPolicy: Always
         ports:
         - containerPort: 80
+      nodeSelector:
+        pool: amd
       imagePullSecrets:
       - name: dockerhub-secret
