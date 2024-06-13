@@ -4,6 +4,6 @@
     "config:recommended"
   ],
   "kubernetes": {
-    "fileMatch": ["\\.yaml$","^k8s/.*\\.yaml$", "^kubernetes/.*\\.yaml$","^k8s-manifests/.*\\.yaml$"]
+    "fileMatch": ["\\.yaml$","^hopper/.*\\.yaml$", "^kubernetes/.*\\.yaml$","^k8s-manifests/.*\\.yaml$"]
   }
 }
