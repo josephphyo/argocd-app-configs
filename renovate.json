@@ -2,5 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "kubernetes": {
+    "fileMatch": ["\\.yaml$","^k8s/.*\\.yaml$", "^kubernetes/.*\\.yaml$","^k8s-manifests/.*\\.yaml$"]
+  }
 }
